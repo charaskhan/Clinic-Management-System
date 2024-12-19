@@ -29,13 +29,3 @@ Each doctor will have their own account where they can:
 Receptionists will have access to all profiles and can edit personal information, but they are restricted from using this information for any unauthorized purposes.
 
 This comprehensive approach aims to streamline operations within the healthcare sector, ultimately leading to enhanced patient care and improved operational efficiency.
-
-Citations:
-[1] https://www.unotech.io/clinic-management-system-software
-[2] https://instacare.com.pk/best-clinic-management-system-software/
-[3] https://otakoyi.software/blog/key-clinic-management-system-features-and-benefits-enhancing-efficiency-and-patient-care
-[4] https://www.rupahealth.com/post/top-10-essential-clinic-management-software-features
-[5] https://www.medesk.net/en/blog/medical-software-features/
-[6] https://www.collaboratemd.com/blog/the-top-7-features-to-look-for-in-practice-management-software/
-[7] https://zandahealth.com/clinic-management-software/
-[8] https://www.linkedin.com/pulse/10-essential-clinic-management-software-features-2024-drlogy-hwhhf
