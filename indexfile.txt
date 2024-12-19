@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Files to download</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<p><br/></p>
+<div class="container">
+    <table class="table table-bordered" style="border: black">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>File</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+
+        include"file.php";
+
+
+
+
+        if(isset($_GET['id']))
+{
+    $id=$_GET['id'];
+    $stat="select * from newFiles where id=?";
+    $result=mysqli_query($db,$stat);
+    $stat->execute();
+    $data =$stat->fetch();
+    $file='media/'.$data['filename'];
+
+    if(file_exists($file))
+    {
+        header('Content-Description:'.$data['description']);
+        header('Content-Type:'.$data['type']);
+        header('Content-Disposition:'.$data['disposition'].': filename="'.basename($file).'"');
+        header('Expires:'.$data['expires']);
+        header('Cache-Control:'.$data['cache']);
+        header('Pragma:'.$data['pragma']);
+        header('Content-Length:'.filesize['$file']);
+        readfile($file);
+        exit;
+    }}
+            while($row = mysqli_fetch_array($result) )
+            {
+
+
+
+        ?>
+                <tr>
+                    <td><?php echo $row["id"] ?></td>
+                    <td><?php echo $row["filename"] ?></td>
+                    <td class="text-center"><a  href="downloadFile.php?id=<?php echo $row['id']?>" class="btn btn-primary">Download</a></td>
+                </tr>
+        <?php
+        }
+        ?>
+        </tbody>
+    </table>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+

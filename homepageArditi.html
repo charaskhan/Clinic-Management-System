@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>CMS</title>
+    <meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style>
+		body{
+		margin:0 0 0 0;
+		}
+		.KryesorM
+		{
+			width:100%;
+			height:100%;
+			border:0px solid red;
+			position:relative;
+			
+		}
+		.BrendaKrye
+		{
+			width:100%;
+			height:100%;
+			border:0px solid blue;
+			border-bottom:1px solid gray;
+		}
+		.HeaderKrye
+		{
+			width:100%;
+			height:150px;
+			border:0px solid red;
+			background-color:rgba(222, 222, 222, 0.3);
+			position:relative;
+			overflow:hidden;
+			
+			
+		}
+		.Logo
+		{
+			width:200px;
+			border:0px solid red;
+			height:100px;
+			position:absolute;
+			left:5%;
+			top:15%;
+			z-index:1;
+			overflow:hidden;
+		}
+		.MbajCategory
+		{
+			width:1100px;
+			border:0px solid red;
+			height:70px;
+			position:absolute;
+			left:25%;
+			top:30%;
+			z-index:1;
+			overflow:hidden;
+		}
+		.Category
+		{
+			width:200px;
+			border:0px solid blue;
+			overflow:hidden;
+			float:left;
+			margin-left:5px;
+		}
+		.Button
+		{
+			width:200px;
+			height:65px;
+			border:0px solid green;
+			float:left;
+			font:700 13px/30px Verdana;
+			color:#FFFFFF;
+			background-color:rgba(40, 60, 71, 1);
+			cursor:pointer;
+			text-align:left;
+		}
+		.Category:hover
+		{
+			-webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+			box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		}
+		.SquareKrye
+		{
+			width:100%;
+			height:600px;
+			border:0px solid red;
+			position:relative;
+		}
+		.Square
+		{
+			width:50%;
+			height:300px;
+			border:0px solid red;
+			float:left;
+			overflow:hidden;
+			
+		}
+		.Square2
+		{
+			width:47%;
+			height:300px;
+			border:0px solid red;
+			float:left;
+			overflow:hidden;
+			margin-left:20px;
+		}
+		.Square3
+		{
+			width:100%;
+			height:300px;
+			border:0px solid red;
+			float:left;
+			overflow:hidden;
+			margin-left:20px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="KryesorM">
+			<div class="BrendaKrye">
+				<div class="HeaderKrye">
+					<div class="Logo">
+						<img src="Images/Logo.png" style="width:85%;"/>
+					</div>
+					<div class="MbajCategory">
+						<div class="Category"> 
+							<form action="homepageArditi.html">
+								<input class="Button" type="submit" value="HOME" />
+							</form>
+						</div>
+						<div class="Category"> 
+							<form action="aboutus.html">
+								<input class="Button" type="submit" value="ABOUT US" />
+							</form>
+						</div>
+						<div class="Category"> 
+							<form action="authentication.php">
+								<input class="Button" type="submit" value="LOG IN AS PATIENT" />
+							</form>
+						</div>
+						<div class="Category"> 
+							<form action="authenticationDoctor.php">
+								<input class="Button" type="submit" value="LOG IN AS DOCTOR" />
+							</form>
+						</div>
+						<div class="Category"> 
+							<form action="authenticationReceptionist.php">
+								<input class="Button" type="submit" value="LOG IN AS RECEPTIONIST" />
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="SquareKrye">
+					<div class="Square3">
+						<nav style="background-image: url('https://www.adroitinfosystems.com/images/siteimages/pages/finalImgforpages/ehospitalsystem-banner.jpg');width:100%; height:100%; class:'d-inline-block align-top'; alt:''">
+							
+						</nav>
+					</div>
+					<div class="Square2">
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"style="width:80%; ">
+							<div class="carousel-inner">
+								
+								<div class="carousel-item active"style="width:100%">
+									<img src="http://aspiresoftware.in/media/k2/items/cache/13f34e2b533e12c6166f88368dcd8c07_XL.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item"style="width:100%">
+									<img src="https://cms.qz.com/wp-content/uploads/2016/12/robot-helping-baby.jpg?quality=80&strip=all&w=1200&h=1000" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="Square">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d2996.121676485473!2d19.82278603670505!3d41.32796742955587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d41.329325!2d19.8181726!5e0!3m2!1sen!2s!4v1559866492655!5m2!1sen!2s" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
